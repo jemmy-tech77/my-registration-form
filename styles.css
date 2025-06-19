@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ff6fd8, #3813c2);
+  color: #03010a;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  background: white;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.radio-group label,
+.checkbox-group label {
+}
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0c5098;
+  color: white;
+  border: name;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: ponter;
+}
