@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--container for our form-->
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form>
+         <!--full name-->
+        <label for="fullname"> Student Name:</label>
+        <input 
+             type="text"
+             id="fullname"
+             name="fullname"
+             placeholder="Enter your full name"
+            />
+
+        <!-- Email -->
+
+    <label for="email">Email:</label> 
+     <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Enter your email"
+        required
+        />
+
+    <!-- Password -->
+       <label for="password">Password:</label> 
+       <input type="password" id="password"
+       placeholder="Enter your password"
+        name="password" required/>
+       
+       
+      <!--gender(radio)-->
+
+      <label>Gender:</label>
+      <div class="radio-group">
+       <label>
+        <input type="radio" name="gender" value="male"/>
+        Male
+       </label>
+       <label>
+        <input type="radio" name="gender" value="female"/>
+        Female
+       </label>
+       <label>
+        <input type="radio" name="gender" value="custom"/>
+        Custom 
+       </label>
+      </div> 
+
+
+
+<!-- Date of birth -->
+
+<label for="dob">Date of Birth:</label>  
+<input type="date" id="dob" name="dob" 
+required/> 
+
+
+<!-- Course Selection -Drop Down -->
+ <label for="course">Select Course:</label>
+  <select id="course" name="course" required>
+     <option value="">--Choose--</option>
+     <option value="bsc">BSC</option>
+     <option value="bit">BIT</option>
+     <option value="dis">DIS</option>
+     <option value="ba">BA</option>
+     </select> 
+
+          
+
+     <!-- Hobbies -Checkboxes -->
+    <label>Hobbies:</label> 
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" name="hobbies" 
+        value="reading"/>
+        Reading
+      </label>
+
+
+      <label>
+        <input type="checkbox" name="hobbies" 
+        value="writing"/>
+        Writing
+      </label>
+
+
+      <label>
+        <input type="checkbox" name="hobbies" 
+        value="singing"/>
+        Singing 
+    
+
+
+       <!--upload Photo-->
+
+<label for="photo">upload Photo:</label>
+<input type="file" id="photo" name="photo"/>
+        
+        
+  <!-- Address -->
+
+  <label for="address">Address:</label> 
+   <textarea
+   id="address"
+   name="address"
+   placeholder="Enter your address" 
+   rows="3"
+   required
+   ></textarea>
+
+
+      
+      </div>
+ <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
